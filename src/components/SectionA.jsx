@@ -1,6 +1,6 @@
 import { Star, TrendingUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import banner from '../assets/images/banner.jpeg';
+import banner from '../assets/images/banner2.png';
 
 function SectionA() {
       const textArray = ["County", "City", "Community"];
@@ -77,12 +77,12 @@ function SectionA() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 // src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
-                src="https://mldvwwasb8tu.i.optimole.com/cb:7ZGO.6206b/w:1100/h:734/q:90/f:best/ig:avif/https://travelaway.me/wp-content/uploads/2013/04/cochem-town-germany.jpg"
-                // src={banner}
+                // src="https://mldvwwasb8tu.i.optimole.com/cb:7ZGO.6206b/w:1100/h:734/q:90/f:best/ig:avif/https://travelaway.me/wp-content/uploads/2013/04/cochem-town-germany.jpg"
+                src={banner}
                 alt="City connections"
-                className="w-full h-[500px] object-cover"
+                className="w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div> */}
             </div>
           </div>
         </div>
