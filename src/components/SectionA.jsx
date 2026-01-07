@@ -87,9 +87,10 @@ function SectionA() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-green-900/40 to-emerald-900/40 backdrop-blur-md border border-green-400/30 rounded-2xl p-8 lg:p-12 shadow-2xl">
+        {/* <div className="bg-gradient-to-r from-green-900/40 to-emerald-900/40 backdrop-blur-md border border-green-400/30 rounded-2xl p-8 lg:p-12 shadow-2xl"> */}
+        <div className="">
           <div className="flex items-center gap-4 mb-6">
-            <TrendingUp className="w-12 h-12 text-green-400" />
+            <TrendingUp className="w-10 h-10 lg:w-12 lg:h-12 text-green-400" />
             <h3 className="text-3xl lg:text-4xl font-bold text-green-300">Raising: $5M Seed Round</h3>
           </div>
 
@@ -99,7 +100,7 @@ function SectionA() {
 
           <button className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-bold text-lg rounded-full hover:from-green-600 hover:to-emerald-600 transition-all duration-300 shadow-lg hover:shadow-green-500/50 hover:scale-105">
             <span className="flex items-center gap-2">
-              Click to invest now. Get equity
+              Click to invest now. <span className='hidden md:inline'> Get equity</span>
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>

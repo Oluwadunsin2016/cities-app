@@ -1,12 +1,13 @@
 import { TrendingUp, Globe, DollarSign, Users, Lock, Shield, Sparkles } from 'lucide-react';
 
+import imageOne from '../assets/images/slide 1.jpeg';
+
 function SectionC() {
   return (
     <section id='opportunity' className="relative min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100 py-20 lg:py-28">
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg')] bg-cover bg-center opacity-5"></div>
-
-      <div className="relative max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg')] bg-cover bg-center opacity-10"></div>
+<div className='mx-auto px-6 max-w-7xl'>
+       <div className="text-center mb-16">
           {/* <div className="inline-flex items-center gap-3 bg-green-100 text-green-700 px-6 py-3 rounded-full mb-6">
             <TrendingUp className="w-6 h-6" />
             <span className="font-semibold text-lg">THE OPPORTUNITY</span>
@@ -15,42 +16,23 @@ function SectionC() {
             A Massive Untapped Market
           </h2>
         </div>
-
-        {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2">
-            <div className="flex justify-center mb-6">
-              <div className="bg-blue-100 p-4 rounded-full">
-                <Globe className="w-10 h-10 text-blue-600" />
-              </div>
+  <div className='flex flex-col lg:flex-row-reverse gap-6'>
+  <div className="relative flex-1">
+            <div className="relative rounded-2xl overflow-hidden">
+              <img
+                // src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
+                // src="https://mldvwwasb8tu.i.optimole.com/cb:7ZGO.6206b/w:1100/h:734/q:90/f:best/ig:avif/https://travelaway.me/wp-content/uploads/2013/04/cochem-town-germany.jpg"
+                src={imageOne}
+                alt="City connections"
+                className="w-full h-auto object-cover object-center aspect-[4/3]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
             </div>
-            <h3 className="text-5xl font-bold text-blue-600 mb-3 text-center">4.8+</h3>
-            <p className="text-xl font-semibold text-gray-800 text-center">billion</p>
-            <p className="text-gray-600 text-center mt-2">global social media users</p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2">
-            <div className="flex justify-center mb-6">
-              <div className="bg-purple-100 p-4 rounded-full">
-                <Users className="w-10 h-10 text-purple-600" />
-              </div>
-            </div>
-            <h3 className="text-5xl font-bold text-purple-600 mb-3 text-center">$480B</h3>
-            <p className="text-xl font-semibold text-gray-800 text-center">by 2028</p>
-            <p className="text-gray-600 text-center mt-2">Creator economy hitting</p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2">
-            <div className="flex justify-center mb-6">
-              <div className="bg-green-100 p-4 rounded-full">
-                <DollarSign className="w-10 h-10 text-green-600" />
-              </div>
-            </div>
-            <h3 className="text-5xl font-bold text-green-600 mb-3 text-center">$2.1T</h3>
-            <p className="text-xl font-semibold text-gray-800 text-center">untapped</p>
-            <p className="text-gray-600 text-center mt-2">Local commerce + social media marketplace</p>
-          </div>
-        </div> */}
-           <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-300 rounded-2xl p-10 mb-16">
+    <div className="relative flex-1">
+           {/* <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-300 rounded-2xl p-10 mb-16"> */}
+           <div className="rounded-2xl mb-16">
           <div className="flex items-start gap-4 mb-6">
             <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
               <Globe className="w-8 h-8 text-blue-400" />
@@ -75,7 +57,8 @@ function SectionC() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-50 to-orange-50 border-2 border-blue-300 rounded-2xl p-10 mb-16">
+        {/* <div className="bg-gradient-to-r from-blue-50 to-orange-50 border-2 border-blue-300 rounded-2xl p-10 mb-16"> */}
+        <div className="rounded-2xl mb-10">
           <div className="flex items-start gap-4 mb-6">
             <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
               <Lock className="w-8 h-8 text-blue-600" />
@@ -100,10 +83,11 @@ function SectionC() {
             </div>
           </div>
         </div>
-
-        <div className="relative">
+      </div>
+  </div>
+          <div className="relative mt-8">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl blur-xl opacity-20"></div>
-          <div className="relative bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl p-10 lg:p-16 text-center shadow-2xl">
+          <div className="relative bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl p-6 text-center shadow-2xl">
             <div className="flex justify-center mb-6">
               <Sparkles className="w-16 h-16 text-yellow-300 animate-pulse" />
             </div>
@@ -115,7 +99,17 @@ function SectionC() {
             </p>
           </div>
         </div>
-      </div>
+<div className='mt-10 flex items-center justify-center'>
+           <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-emerald-500 text-white font-bold text-lg rounded-full hover:from-blue-600 hover:to-emerald-600 transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:scale-105">
+            <span className="flex items-center gap-2">
+              Invest now
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </span>
+          </button>
+</div>
+</div>
     </section>
   );
 }
