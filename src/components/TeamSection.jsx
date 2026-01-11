@@ -161,7 +161,7 @@ function TeamSection() {
             Want to join our mission to transform city economies?
           </p>
           <a
-            href="mailto:careers@citiesapp.com"
+            href="mailto:invest@cittis.cc"
             className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-medium rounded-full hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30"
           >
             <Mail className="w-4 h-4" />

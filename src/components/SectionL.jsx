@@ -115,6 +115,7 @@
 
 
 import { Zap, Shield, ShoppingCart, Users, Globe, Sparkles, Target, Heart, Building2, Rocket, Eye, TrendingUp, ArrowRight } from 'lucide-react';
+import phone from '../assets/images/phone_1.jpeg';
 
 function SectionL() {
   const visionPoints = [
@@ -233,8 +234,10 @@ function SectionL() {
           </div>
         </div>
 
+
+        <div className='mb-20 flex flex-col lg:flex-row gap-12'>
         {/* Vision Points Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:w-2/3">
           {visionPoints.map((point, index) => {
             const Icon = point.icon;
             const colors = colorClasses[point.color];
@@ -256,7 +259,7 @@ function SectionL() {
                   </div>
                   
                   {/* Icon with animated ring */}
-                  <div className={`relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${point.gradient} mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${point.gradient} mb-6 shadow-lg transition-transform duration-300`}>
                     <Icon className="w-8 h-8 text-white" />
                     
                     {/* Animated ring */}
@@ -264,7 +267,7 @@ function SectionL() {
                   </div>
                   
                   {/* Title */}
-                  <h3 className={`text-xl font-bold ${colors.text} mb-3 group-hover:scale-105 transition-transform duration-300 inline-block`}>
+                  <h3 className={`text-xl font-bold ${colors.text} mb-3 inline-block ml-4`}>
                     {point.title}
                   </h3>
                   
@@ -294,6 +297,43 @@ function SectionL() {
           })}
         </div>
 
+
+    <div className="lg:w-1/3 relative group">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl transform group-hover:scale-[1.02] transition-all duration-500">
+              {/* <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-cyan-600/20 z-10"></div> */}
+              <img
+                src={phone}
+                alt="City digital economy opportunity"
+                className="w-full h-full object-cover"
+              />
+              
+              {/* Floating stats on image */}
+              <div className="absolute top-6 left-6 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl z-20">
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900 dark:text-white">Growing at</p>
+                    <p className="text-lg font-bold text-green-600">+45% YoY</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="absolute bottom-6 right-6 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl z-20">
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900 dark:text-white">Market Gap</p>
+                    <p className="text-lg font-bold text-blue-600">$1.7T</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Background glow */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-cyan-500/20 to-emerald-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
+        </div>
+
         {/* Vision Statement */}
         <div className="relative mb-20">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-yellow-500/10 rounded-3xl blur-3xl opacity-50"></div>
@@ -305,7 +345,7 @@ function SectionL() {
             
             <div className="relative z-10">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-                <div className="flex-shrink-0">
+                <div className="hidden lg:block flex-shrink-0">
                   <div className="relative">
                     <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-2xl">
                       <Eye className="w-16 h-16 text-white" />

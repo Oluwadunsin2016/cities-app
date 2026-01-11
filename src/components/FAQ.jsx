@@ -95,7 +95,19 @@ export default function FAQ() {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
+{/* invest@cittis.cc */}
+
+     {/* <div className="mt-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
+          <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
+          <p className="text-lg opacity-90 mb-6">
+            Get in touch with our team for more information about Cities App
+          </p>
+          <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
+            Contact Us
+          </button>
+        </div> */}
+
+        {/* <div className="mt-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
           <p className="text-lg opacity-90 mb-6">
             Get in touch with our team for more information about Cities App
@@ -112,6 +124,24 @@ export default function FAQ() {
           <p className="mt-4 text-sm opacity-80">
             We typically respond within a few minutes
           </p>
+        </div> */}
+        <div className="mt-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
+          <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
+          <p className="text-lg opacity-90 mb-6">
+            Get in touch with our team for more information about Cities App
+          </p>
+          <a
+            href='mailto:invest@cittis.cc'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <MessageCircle className="w-5 h-5" />
+            Contact Us via Email
+          </a>
+          {/* <p className="mt-4 text-sm opacity-80">
+            We typically respond within a few minutes
+          </p> */}
         </div>
       </div>
     </section>
